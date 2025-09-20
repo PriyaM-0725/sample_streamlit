@@ -11,7 +11,7 @@ st.markdown(
         .stApp {
             background: linear-gradient(135deg, #ffffff 0%, #f0f0f5 100%);
             font-family: 'Segoe UI', sans-serif;
-            color: #222; /* Default text color */
+            color: #222;
         }
 
         /* Title */
@@ -31,14 +31,14 @@ st.markdown(
             margin-bottom: 40px;
         }
 
-        /* Card-like sections */
+        /* Card-like sections - updated */
         .card {
-            background: white;
+            background: rgba(255, 255, 255, 0.6); /* semi-transparent */
             padding: 30px;
             border-radius: 16px;
-            box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.05);
             margin-bottom: 30px;
-            color: #222; /* Dark text inside cards */
+            color: #222;
         }
 
         /* Links */
@@ -150,3 +150,6 @@ st.markdown(
     """
 )
 st.markdown("</div>", unsafe_allow_html=True)
+
+# ---------- FOOTER ----------
+st.markdown("<p class='footer'>© 2025 Mohana Priya | Built with Streamlit</p>", unsafe_allow_html=True)
