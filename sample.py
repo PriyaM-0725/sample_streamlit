@@ -7,31 +7,21 @@ st.set_page_config(page_title="Mohana Priya | Portfolio", page_icon="🌸", layo
 st.markdown(
     """
     <style>
-        /* Background Gradient */
+        /* Full app background */
         .stApp {
             background: linear-gradient(135deg, #ffffff 0%, #f0f0f5 100%);
             font-family: 'Segoe UI', sans-serif;
             color: #222;
         }
 
-        /* Title */
-        .title {
-            font-size: 48px !important;
-            font-weight: 800;
-            color: #6A0DAD;
-            text-align: center;
-            margin-top: -10px;
+        /* Remove white backgrounds from Streamlit containers */
+        .css-1d391kg,  /* main container */
+        .css-1v3fvcr,  /* block container */
+        .css-1offfwp {  /* other container classes */
+            background-color: transparent !important;
         }
 
-        /* Subtitle */
-        .subtitle {
-            font-size: 22px !important;
-            color: #444;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        /* Card-like sections - updated */
+        /* Card-like sections */
         .card {
             background: rgba(255, 255, 255, 0.6); /* semi-transparent */
             padding: 30px;
@@ -39,26 +29,6 @@ st.markdown(
             box-shadow: 0px 4px 15px rgba(0,0,0,0.05);
             margin-bottom: 30px;
             color: #222;
-        }
-
-        /* Links */
-        a {
-            text-decoration: none;
-            color: #6A0DAD;
-            font-weight: 600;
-            transition: 0.3s;
-        }
-        a:hover {
-            color: #E75480;
-            text-decoration: underline;
-        }
-
-        /* Footer */
-        .footer {
-            text-align: center;
-            color: #666;
-            margin-top: 40px;
-            font-size: 14px;
         }
 
         /* Profile Image */
@@ -71,6 +41,41 @@ st.markdown(
             border-radius: 50%;
             object-fit: cover;
             box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* Title & Subtitle */
+        .title { 
+            font-size:48px !important; 
+            font-weight:800; 
+            color:#6A0DAD; 
+            text-align:center; 
+            margin-top:-10px; 
+        }
+        .subtitle { 
+            font-size:22px !important; 
+            color:#444; 
+            text-align:center; 
+            margin-bottom:40px; 
+        }
+
+        /* Links */
+        a { 
+            text-decoration:none; 
+            color:#6A0DAD; 
+            font-weight:600; 
+            transition:0.3s; 
+        }
+        a:hover { 
+            color:#E75480; 
+            text-decoration:underline; 
+        }
+
+        /* Footer */
+        .footer { 
+            text-align:center; 
+            color:#666; 
+            margin-top:40px; 
+            font-size:14px; 
         }
     </style>
     """,
