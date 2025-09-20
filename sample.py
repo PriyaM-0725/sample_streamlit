@@ -15,27 +15,28 @@ st.markdown(
 
         /* Title */
         .title {
-            font-size: 42px !important;
-            font-weight: 700;
+            font-size: 48px !important;
+            font-weight: 800;
             color: #6A0DAD;
             text-align: center;
+            margin-top: -20px;
         }
 
         /* Subtitle */
         .subtitle {
             font-size: 20px !important;
-            color: #444;
+            color: #333;
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
         /* Card-like sections */
         .card {
             background: white;
-            padding: 25px;
+            padding: 30px;
             border-radius: 16px;
-            box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
-            margin-bottom: 25px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
         }
 
         /* Links */
@@ -43,9 +44,31 @@ st.markdown(
             text-decoration: none;
             color: #6A0DAD;
             font-weight: 600;
+            transition: 0.3s;
         }
         a:hover {
             color: #E75480;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            color: gray;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        /* Profile Image */
+        .profile-pic {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
         }
     </style>
     """,
@@ -53,12 +76,13 @@ st.markdown(
 )
 
 # ---------- HEADER ----------
+st.markdown("<img src='https://i.ibb.co/6wM5jXf/profile.png' class='profile-pic'>", unsafe_allow_html=True)  # Replace with your image URL
 st.markdown("<h1 class='title'>🌸 Mohana Priya</h1>", unsafe_allow_html=True)
 st.markdown("<p class='subtitle'>Front-End Developer | UI/UX Enthusiast</p>", unsafe_allow_html=True)
 
 st.write(
     """
-    Welcome to my Streamlit portfolio!  
+    Welcome to my **Streamlit portfolio!**  
     I’m passionate about **web development, UI/UX design, and creating meaningful digital experiences.**  
     Explore my journey and projects below 👇
     """
@@ -73,6 +97,7 @@ st.write(
     """
     I am a dedicated and enthusiastic developer with internship experience in 
     **Web Development and UI/UX Design**.  
+
     Skilled in building responsive web applications using **React.js, Next.js, and modern front-end technologies**.  
     Currently enhancing my knowledge in **AI and full-stack development**.
     """
@@ -90,7 +115,7 @@ skills = [
     "UI/UX Design", "Figma", "Git & GitHub"
 ]
 for i, skill in enumerate(skills):
-    cols[i % 3].markdown(f"- {skill}")
+    cols[i % 3].markdown(f"- **{skill}**")
 st.markdown("</div>", unsafe_allow_html=True)
 
 # ---------- PROJECTS ----------
@@ -122,8 +147,8 @@ st.markdown(
 st.markdown("</div>", unsafe_allow_html=True)
 
 # ---------- FOOTER ----------
-st.markdown("---")
+st.markdown("<hr>", unsafe_allow_html=True)
 st.markdown(
-    "<p style='text-align:center; color:gray;'>✨ Built with ❤️ using Streamlit ✨</p>",
+    "<p class='footer'>✨ Built with ❤️ using Streamlit | © 2025 Mohana Priya ✨</p>",
     unsafe_allow_html=True
 )
