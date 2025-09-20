@@ -9,8 +9,9 @@ st.markdown(
     <style>
         /* Background Gradient */
         .stApp {
-            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #f0f0f5 100%);
             font-family: 'Segoe UI', sans-serif;
+            color: #222; /* Default text color */
         }
 
         /* Title */
@@ -19,13 +20,13 @@ st.markdown(
             font-weight: 800;
             color: #6A0DAD;
             text-align: center;
-            margin-top: -20px;
+            margin-top: -10px;
         }
 
         /* Subtitle */
         .subtitle {
-            font-size: 20px !important;
-            color: #333;
+            font-size: 22px !important;
+            color: #444;
             text-align: center;
             margin-bottom: 40px;
         }
@@ -37,6 +38,7 @@ st.markdown(
             border-radius: 16px;
             box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
             margin-bottom: 30px;
+            color: #222; /* Dark text inside cards */
         }
 
         /* Links */
@@ -54,7 +56,7 @@ st.markdown(
         /* Footer */
         .footer {
             text-align: center;
-            color: gray;
+            color: #666;
             margin-top: 40px;
             font-size: 14px;
         }
@@ -76,7 +78,10 @@ st.markdown(
 )
 
 # ---------- HEADER ----------
-st.markdown("<img src='https://i.ibb.co/6wM5jXf/profile.png' class='profile-pic'>", unsafe_allow_html=True)  # Replace with your image URL
+st.markdown(
+    "<img src='https://i.pinimg.com/736x/b3/44/75/b34475a434d23035db6c80d1a3e1abb2.jpg' class='profile-pic'>",
+    unsafe_allow_html=True
+)
 st.markdown("<h1 class='title'>🌸 Mohana Priya</h1>", unsafe_allow_html=True)
 st.markdown("<p class='subtitle'>Front-End Developer | UI/UX Enthusiast</p>", unsafe_allow_html=True)
 
@@ -145,10 +150,3 @@ st.markdown(
     """
 )
 st.markdown("</div>", unsafe_allow_html=True)
-
-# ---------- FOOTER ----------
-st.markdown("<hr>", unsafe_allow_html=True)
-st.markdown(
-    "<p class='footer'>✨ Built with ❤️ using Streamlit | © 2025 Mohana Priya ✨</p>",
-    unsafe_allow_html=True
-)
